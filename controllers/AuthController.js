@@ -91,29 +91,6 @@ userController.doLogin = function(req, res) {
   })(req, res);
 
 };
-// userController.doLogin = function(req, res) {
-//   var db = req.db;
-//   // console.log("DB --------> ", db);
-//   // Set our collection
-//   var userCollection = db.collection("user");
-//   // Get our form values. These rely on the "name" attributes
-//   // console.log("BODY", req.body);
-
-//   var uname = req.body.id;
-//   var password = req.body.password;
- 
-//   console.log("33333333", req.body.username, req.body.id, req.body.password);
-//   passport.authenticate('local', function(err, user, info) {
-//     console.log("KOKOKOKPKPKP",user);
-//     if (err) { return next(err); }
-//     if (!user) { return res.redirect('www.google.com'); }
-//     req.logIn(user, function(err) {
-//       if (err) { return next(err); }
-//       return res.redirect('/users/' + user.username);
-//     });
-//   })(req, res);
-// };
-
 // logout
 userController.logout = function(req, res) {
   req.logout();
