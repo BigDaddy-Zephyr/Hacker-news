@@ -7,7 +7,7 @@ var Schema=mongoose.Schema;
 var UserSchema=new Schema({
 
 	username:{type:String,
-			  unique: true}
+			  unique: true},
 	name:String,
 	password:String,
 })
